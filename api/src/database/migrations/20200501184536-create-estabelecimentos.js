@@ -3,7 +3,7 @@
 module.exports = {
   up: (queryInterface, Sequelize) => {
     
-      return queryInterface.createTable('users', { 
+      return queryInterface.createTable('estabelecimentos', { 
         id: {
           type: Sequelize.INTEGER,
           allowNull: false,
@@ -44,7 +44,7 @@ module.exports = {
           allowNull: false
         },
         endereco: {
-          type: Sequelize.String
+          type: Sequelize.STRING
         },
         numero: {
           type: Sequelize.INTEGER
@@ -61,7 +61,7 @@ module.exports = {
         atendimento_virtual: {
           type: Sequelize.STRING
         },
-        statu: {
+        status: {
           type: Sequelize.STRING
         },
         createdAt: {

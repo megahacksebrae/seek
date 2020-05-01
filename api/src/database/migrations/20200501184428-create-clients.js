@@ -44,7 +44,7 @@ module.exports = {
           allowNull: false
         },
         endereco: {
-          type: Sequelize.String
+          type: Sequelize.STRING
         },
         numero: {
           type: Sequelize.INTEGER
